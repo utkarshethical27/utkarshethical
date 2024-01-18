@@ -1,0 +1,11 @@
+#notFound{
+    align-items: center;
+    height: calc(100vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden !important;
+    color: white;
+    font-size: 50px;
+    font-family: poppins;
+}
