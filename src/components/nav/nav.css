@@ -126,6 +126,7 @@ footer .fa-xmark {
     font-size: 33px;
     height: 0;
     overflow: hidden;
+    backdrop-filter: blur(10px);
 }
 
 #socials * {
