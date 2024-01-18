@@ -91,7 +91,7 @@ footer {
     bottom: 30px;
     right: 30px;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     z-index: 5;
 }
 
@@ -127,8 +127,6 @@ footer .fa-xmark {
     height: 0;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #socials * {
