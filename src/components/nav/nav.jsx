@@ -75,8 +75,8 @@ export default function Nav() {
                 <footer>
                     <div id="socials" onMouseOver={messageHovered} onMouseOut={messageUnhovered}>
                         <Link to="https://www.instagram.com/utkarshethical27/"><i className='fa-brands fa-instagram'></i></Link>
-                        <Link to=""><i className='fa-brands fa-facebook'></i></Link>
-                        <Link to=""><i className='fa-brands fa-x-twitter'></i></Link>
+                        <Link to=""><i className='fa-brands fa-linkedin'></i></Link>
+                        <Link to=""><i className='fa-brands fa-github'></i></Link>
                         <Link to="https://www.youtube.com/@utkarshethical27"><i className='fa-brands fa-youtube'></i></Link>
                     </div>
                     <i className='fa-solid fa-xmark' onMouseOver={messageHovered} onMouseOut={messageUnhovered}></i>
