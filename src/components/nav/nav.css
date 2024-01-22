@@ -199,4 +199,20 @@ footer .fa-xmark {
         margin: 0;
         padding: 0;
     }
+    #menu:nth-child(1){
+        transition: .3s;
+        transition-delay: .25s;
+    }
+    #menu:nth-child(2){
+        transition: .3s;
+        transition-delay: .50s;
+    }
+    #menu:nth-child(3){
+        transition: .3s;
+        transition-delay: .75s;
+    }
+    #menu:nth-child(4){
+        transition: .3s;
+        transition-delay: 1s;
+    }
 }
