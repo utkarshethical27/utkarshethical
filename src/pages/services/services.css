@@ -1,0 +1,50 @@
+#serviceSection{
+    padding: 0 10px;
+}
+.service {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    color: white;
+}
+
+.service:after{
+    content: "";
+    width: 350px;
+    height: 4px;
+    position: absolute;
+    background: #7E22D3;
+    bottom: -10px;
+    transition: .3s;
+    z-index: -1;
+}
+
+.service:hover:after{
+    height: 90px;
+}
+
+#serviceSection p{
+    font-family: poppins;
+    color: white;
+    font-size: 30px;
+}
+
+#serviceSection p span{
+    color: #7E22D3;
+}
+
+#serviceSection .heading{
+    color: #7E22D3;
+    font-family: poppins;
+    font-size: 35px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.price:after{
+    width: 250px;
+}
