@@ -59,33 +59,6 @@ export default function About() {
           <h1>Video Editing</h1>
         </div>
       </div>
-      <h1 className='title'>Services</h1>
-      <div id="services">
-        <div>
-          <div>
-            <i className='fas fa-paintbrush'></i>
-            <h1>Web Designing</h1>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i className='fas fa-code'></i>
-            <h1>Web Development</h1>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i className='fas fa-pen-nib'></i>
-            <h1>Graphic Designing</h1>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i className='fas fa-video'></i>
-            <h1>Video Editing</h1>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
