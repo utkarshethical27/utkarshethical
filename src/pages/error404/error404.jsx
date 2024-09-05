@@ -6,8 +6,7 @@ export default function Error(){
         <>
             <Nav />
             <div id="notFound">
-                <div>404</div>
-                <div>Page Not Found</div>
+                <div>The Page You Are Looking For Has Not Found</div>
             </div>
         </>
     )
