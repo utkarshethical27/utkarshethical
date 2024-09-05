@@ -1,7 +1,6 @@
 import './nav.css'
 import ParticlesBackground from './particles'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 
 export default function Nav() {
     
@@ -66,6 +65,7 @@ export default function Nav() {
                         </div>
                         <ul id='menu'>
                             <Link to="/" className='menu'>Home</Link>
+                            <Link to="/services" className='menu'>Services</Link>
                             <Link to="/posts" className='menu'>Posts</Link>
                             <Link to="/about" className='menu'>About</Link>
                             <Link to="/contact" className='menu'>Contact</Link>
