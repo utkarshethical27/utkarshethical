@@ -1,5 +1,6 @@
 import Nav from '../../components/nav/nav'
 import './home.css'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -7,8 +8,10 @@ export default function Home() {
             <Nav />
             <section id="home">
                 <div id="center">
-                    <h1>Utkarsh Mishra</h1>
-                    <div>Web Developer <span>/</span> Android Developer</div>
+                    <div>Need a website for your business?<br/>Get a website in just <span>₹300/–</span>
+                    <div>Note :- This price is only for website designing(exclusive of domain and hosting). <Link to="/services" id="vd">View details</Link></div>
+                    </div>
+                    <Link to="https://wa.me/+919005674186" id="cn">Contact Now</Link>
                 </div>
             </section>
         </>

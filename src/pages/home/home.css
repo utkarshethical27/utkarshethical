@@ -11,21 +11,47 @@ h1{
 
 #center{
     margin-left: 20px;
-}
-
-#center h1{
-    font-size: 50px;
-    font-family: playfair display;
-    margin: 0;
-    letter-spacing: 5px;
+    margin-top: -7.6vh;
 }
 
 #center div{
-    color: white;
+    font-size: 35px;
     font-family: poppins;
-    font-size: 22px;
+    color: white;
 }
 
 #center div span{
     color: #7E22D3;
+    font-size: 50px;
+    font-family: georgia;
+    letter-spacing: 3px;
+}
+
+#center div div{
+    font-size: 20px;
+}
+
+#center #vd{
+    color: #7E22D3;
+    text-decoration: none;
+}
+
+#center #cn{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    text-align: center;
+    padding: 10px 28vw;
+    border-radius: 10px;
+    top: 20px;
+    position: relative;
+    font-size: 20px;
+    font-family: poppins;
+    border: 2px solid #7E22D3;
+    transition: .3s;
+}
+
+#center #cn:hover{
+    color: white;
+    background: #7E22D3;
 }
