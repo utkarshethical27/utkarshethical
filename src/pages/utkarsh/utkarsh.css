@@ -3,6 +3,7 @@
     display: flex;
     width: 80%;
     left: 10%;
+    flex-direction: column;
 }
 #login *{
     width: 90%;
