@@ -7,6 +7,7 @@ import About from './pages/about/about'
 import Contact from './pages/contact/contact'
 import Error404 from './pages/error404/error404'
 import Post from './pages/post/post'
+import Utkarsh from './pages/utkarsh/utkarsh'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path='/post/:id' element={<Post />} />
         <Route path="/about/" element={<About />} />
         <Route path="/contact/" element={<Contact />} />
+        <Route path="/utkarsh/" element={<Utkarsh />} />
         <Route path="/*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
