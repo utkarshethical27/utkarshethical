@@ -6,14 +6,11 @@ export default function Home() {
     return (
         <>
             <Nav />
-            <section id="home">
-                <div id="center">
-                    <div>Need a website for your business?<br/>Get a website in just <span>₹300/–</span>
-                    <div>Note :- This price is only for website designing(exclusive of domain and hosting). <Link to="/services" id="vd">View details</Link></div>
-                    </div>
-                    <Link to="https://wa.me/+919005674186" id="cn">Contact Now</Link>
-                </div>
-            </section>
+            <div id="login">
+                <input type="text" placeholder="Enter username" id="user"/>
+                <input type="password" placeholder="Enter password" id="pass"/>
+                <input type="button" value="Authenticate" id="submit"/>
+            </div>
         </>
     )
 }
