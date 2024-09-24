@@ -4,8 +4,17 @@
     width: 80%;
     margin-left: 10%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #login input{
     width: 90%;
     height: 20px;
+    background: transparent;
+    color: white;
+}
+#submit{
+    width: 92%;
+    background: white;
+    color: black;
 }
