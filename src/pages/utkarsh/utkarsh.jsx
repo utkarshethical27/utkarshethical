@@ -9,14 +9,16 @@ export default function Utkarsh() {
     const [logined, setLogined] = useState(false)
 
     const login = () => {
-        if(user === process.env.USERNAME){
-            if(pass === process.env.PASSWORD){
-                setLogined(true)
+        if(user.trim()!=='' && pass.trim()!==''){
+            if(user.trim() === process.env.USERNAME){
+                if(pass.trim() === process.env.PASSWORD){
+                    setLogined(true)
+                }else{
+                    alert('Password Galat Hai')
+                }
             }else{
-                alert('Password Galat Hai')
+                alert('Username Galat Hai')
             }
-        }else{
-            alert('Username Galat Hai')
         }
     }
     
@@ -26,7 +28,7 @@ export default function Utkarsh() {
             <div id="login">
                 <input type="text" placeholder="Enter username" id="user" value={user} onChange={(e)=>setUser(e.target.value)}/>
                 <input type="password" placeholder="Enter password" id="pass" value={pass} onChange={(e)=>setPass(e.target.value)}/>
-                <input type="button" value="Authenticate" id="submit" style={{opacity: (user.trim()!=='' && pass.trim()!=='')?1:.5}} onPress={login}/>
+                <input type="button" value="Authenticate" id="submit" style={{opacity: (user.trim()!=='' && pass.trim()!=='')?1:.5}} onClick={login}/>
             </div>
         </>
     )
