@@ -20,7 +20,8 @@
     outline: none;
 }
 #submit{
-    width: calc(100% + 20px);
+    width: 100%;
+    height: 40px;
     background: white !important;
     color: black !important;
     padding: 0;
