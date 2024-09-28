@@ -19,7 +19,7 @@
     padding: 0 10px;
 }
 #submit{
-    width: 130%;
+    width: calc(100% + 20px);
     background: white !important;
     color: black !important;
     padding: 0;
