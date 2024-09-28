@@ -10,8 +10,8 @@ export default function Utkarsh() {
 
     const login = () => {
         if(user.trim()!=='' && pass.trim()!==''){
-            if(user.trim() === process.env.USERNAME){
-                if(pass.trim() === process.env.PASSWORD){
+            if(user.trim() === process.env.REACT_APP_USERNAME){
+                if(pass.trim() === process.env.REACT_APP_PASSWORD){
                     setLogined(true)
                 }else{
                     alert('Password Galat Hai')
