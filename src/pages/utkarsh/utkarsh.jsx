@@ -2,6 +2,7 @@ import Nav from '../../components/nav/nav'
 import './utkarsh.css'
 import { Link } from 'react-router-dom';
 import {useState} from 'react'
+import axios from 'axios'
 
 export default function Utkarsh() {
     const [user, setUser] = useState('')
@@ -10,8 +11,8 @@ export default function Utkarsh() {
 
     const login = async () => {
         if(user.trim()!=='' && pass.trim()!==''){
-            const res = await fetch('https://utkarshethicalserver.vercel.app/api/getUP')
-            alert(JSON.stringify(res.json()))
+            const res = await axios.get('https://utkarshethicalserver.vercel.app/api/getUP')
+            alert(res.json())
             if(user.trim() === user){
                 if(pass.trim() === pass){
                     setLogined(true)
