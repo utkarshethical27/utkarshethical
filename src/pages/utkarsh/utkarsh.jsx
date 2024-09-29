@@ -12,7 +12,7 @@ export default function Utkarsh() {
     const login = async () => {
         if(user.trim()!=='' && pass.trim()!==''){
             const res = await axios.get('https://utkarshethicalserver.vercel.app/api/getUP')
-            alert(res.json())
+            alert(res.data)
             if(user.trim() === user){
                 if(pass.trim() === pass){
                     setLogined(true)
