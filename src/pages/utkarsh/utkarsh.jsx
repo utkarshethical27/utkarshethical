@@ -11,10 +11,9 @@ export default function Utkarsh() {
 
     const login = async () => {
         if(user.trim()!=='' && pass.trim()!==''){
-            const res = await axios.get('https://utkarshethicalserver.vercel.app/api/getUP')
-            alert(res.data)
-            if(user.trim() === user){
-                if(pass.trim() === pass){
+            const res = await (axios.get('https://utkarshethicalserver.vercel.app/api/getUP')).data
+            if(user.trim() === res.user){
+                if(pass.trim() === res.pass){
                     setLogined(true)
                 }else{
                     alert('Password Galat Hai')
