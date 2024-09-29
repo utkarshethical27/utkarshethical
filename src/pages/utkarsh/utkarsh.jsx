@@ -10,7 +10,8 @@ export default function Utkarsh() {
 
     const login = async () => {
         if(user.trim()!=='' && pass.trim()!==''){
-            const {user, pass} = await fetch('https://utkarshethicalserver.vercel.app/api/getUP')
+            const res = await fetch('https://utkarshethicalserver.vercel.app/api/getUP')
+            alert(res)
             if(user.trim() === user){
                 if(pass.trim() === pass){
                     setLogined(true)
