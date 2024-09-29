@@ -30,3 +30,11 @@
     border-radius: 10px;
 
 }
+
+#welBox{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: white;
+    font-size: 20px;
+}
