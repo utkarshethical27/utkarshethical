@@ -8,10 +8,11 @@ export default function Utkarsh() {
     const [pass, setPass] = useState('')
     const [logined, setLogined] = useState(false)
 
-    const login = () => {
+    const login = async () => {
         if(user.trim()!=='' && pass.trim()!==''){
-            if(user.trim() === process.env.REACT_APP_USERNAME){
-                if(pass.trim() === process.env.REACT_APP_PASSWORD){
+            const {user, pass} = await fetch('https://utkarshethicalserver.vercel.app/api/getUP')
+            if(user.trim() === user){
+                if(pass.trim() === pass){
                     setLogined(true)
                 }else{
                     alert('Password Galat Hai')
