@@ -27,6 +27,7 @@ export default function Utkarsh() {
     return (
         <>
             <Nav />
+            <div id="welCover"></div>
             <div id="welBox">Welcome aboard captain!</div>
             {!logined && (<div id="login">
                 <input type="text" placeholder="Enter username" autocapitalize="off" id="user" value={user} onChange={(e)=>setUser(e.target.value)}/>
