@@ -49,8 +49,8 @@ login()
             </div>)}
             {logined && (<>
                 <div id="action">
-                    <input type="button" value="Upload Files" id="uploadBut" onClick={=>setShowUpload(true)}/>
-                    <input type="button" value="Create Files" id="createBut" onClick={=>setShowCreate(true)}/>
+                    <input type="button" value="Upload Files" id="uploadBut" onClick={()=>setShowUpload(true)}/>
+                    <input type="button" value="Create Files" id="createBut" onClick={()=>setShowCreate(true)}/>
                 </div>
                 <div id="files"></div>
             </>)}
