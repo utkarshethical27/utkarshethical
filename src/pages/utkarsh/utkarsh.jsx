@@ -36,7 +36,7 @@ export default function Utkarsh() {
        // }
     }
 
-    useEffect(()>{
+    useEffect(()=>{
         login()
     })
     
