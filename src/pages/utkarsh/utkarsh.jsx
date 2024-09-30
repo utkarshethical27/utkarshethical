@@ -22,7 +22,7 @@ export default function Utkarsh() {
                     files.data.forEach((e)=>{
                         const file = document.createElement('div')
                         file.setAttribute('className','file')
-                        file.innerHTML = '<Link to="'+e.secure_url+'" className="fileText">'+e.display_name+'.'+e.format+'</Link>'
+                        file.innerHTML = '<Link to='+e.secure_url+' className="fileText">'+e.display_name+'.'+e.format+'</Link>'
                         document.getElementById('body').appendChild(file)
                     })
                 }else{
