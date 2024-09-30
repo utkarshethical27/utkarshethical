@@ -48,10 +48,22 @@ export default function Utkarsh() {
             </div>)}
             {logined && (<>
                 <div id="action">
-                    <input type="button" value="Upload Files" id="upload" onClick={=>setShowUpload(true)}/>
-                    <input type="button" value="Create Files" id="create" onClick={=>setShowCreate(true)}/>
+                    <input type="button" value="Upload Files" id="uploadBut" onClick={=>setShowUpload(true)}/>
+                    <input type="button" value="Create Files" id="createBut" onClick={=>setShowCreate(true)}/>
                 </div>
                 <div id="files"></div>
+            </>)}
+            {showUpload && (<>
+                <div id="uploadBack"></div>
+                <div id="upload">
+                    
+                </div>
+            </>)}
+            {showCreate && (<>
+                <div id="createBack"></div>
+                <div id="create">
+                    
+                </div>
             </>)}
         </>
     )
