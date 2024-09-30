@@ -20,7 +20,10 @@ export default function Utkarsh() {
                     setTimeout(()=>{setShowWel(false)}, 1000)
                     const files = await axios.get('https://utkarshethicalserver.vercel.app/api/getFiles')
                     files.data.forEach((e)=>{
-                        alert(e.display_name+'.'+e.format)
+                        const file = document.createElement('div')
+                        file.setAttribute('className','file')
+                        file.innerHTML = '<Link to="'+e.secure_url+'" className="fileText">'+e.display_name+'.'+e.format+'</Link>'
+                        document.getElementById('body').appendChild(file)
                     })
                 }else{
                     alert('Password Galat Hai')
