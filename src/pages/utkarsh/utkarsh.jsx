@@ -35,13 +35,12 @@ export default function Utkarsh() {
           //  }
        // }
     }
-login()
     
     return (
         <>
             <Nav />
             {showWel && (<><div id="welCover"></div>
-            <div id="welBox">Welcome aboard captain!</div></>)}
+            <div onLoad={login} id="welBox">Welcome aboard captain!</div></>)}
             {!logined && (<div id="login">
                 <input type="text" placeholder="Enter username" autocapitalize="off" id="user" value={user} onChange={(e)=>setUser(e.target.value)}/>
                 <input type="password" placeholder="Enter password" id="pass" value={pass} onChange={(e)=>setPass(e.target.value)}/>
