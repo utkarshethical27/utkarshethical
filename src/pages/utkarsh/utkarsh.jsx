@@ -9,6 +9,8 @@ export default function Utkarsh() {
     const [pass, setPass] = useState('')
     const [logined, setLogined] = useState(false)
     const [showWel, setShowWel] = useState(false)
+    const [showCreate, setShowCreate] = useState(false)
+    const [showUpload, setShowUpload] = useState(false)
 
     const login = async () => {
         if(user.trim()!=='' && pass.trim()!==''){
@@ -44,9 +46,13 @@ export default function Utkarsh() {
                 <input type="password" placeholder="Enter password" id="pass" value={pass} onChange={(e)=>setPass(e.target.value)}/>
                 <input type="button" value="Authenticate" id="submit" style={{opacity: (user.trim()!=='' && pass.trim()!=='')?1:.5}} onClick={login}/>
             </div>)}
-            {logined && (<div id="body">
-                
-            </div>)}
+            {logined && (<>
+                <div id="action">
+                    <input type="button" value="Upload Files" id="upload" onClick={=>setShowUpload(true)}/>
+                    <input type="button" value="Create Files" id="create" onClick={=>setShowCreate(true)}/>
+                </div>
+                <div id="files"></div>
+            </>)}
         </>
     )
 }
