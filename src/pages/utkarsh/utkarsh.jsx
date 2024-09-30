@@ -7,16 +7,16 @@ import axios from 'axios'
 export default function Utkarsh() {
     const [user, setUser] = useState('')
     const [pass, setPass] = useState('')
-    const [logined, setLogined] = useState(false)
+    const [logined, setLogined] = useState(true)
     const [showWel, setShowWel] = useState(false)
     const [showCreate, setShowCreate] = useState(false)
     const [showUpload, setShowUpload] = useState(false)
 
     const login = async () => {
-        if(user.trim()!=='' && pass.trim()!==''){
+        //if(user.trim()!=='' && pass.trim()!==''){
             const res = await axios.get('https://utkarshethicalserver.vercel.app/api/getUP')
-            if(user.trim() === res.data.user){
-                if(pass.trim() === res.data.pass){
+           // if(user.trim() === res.data.user){
+            //    if(pass.trim() === res.data.pass){
                     setLogined(true)
                     setShowWel(true)
                     setTimeout(()=>{setShowWel(false)}, 1000)
@@ -27,14 +27,15 @@ export default function Utkarsh() {
                         file.innerHTML = '<a href='+e.secure_url+' className="fileText" target="_blank">'+e.display_name+'.'+e.format+'</a>'
                         document.getElementById('body').appendChild(file)
                     })
-                }else{
-                    alert('Password Galat Hai')
-                }
-            }else{
-                alert('Username Galat Hai')
-            }
-        }
+              //  }else{
+         //           alert('Password Galat Hai')
+        //        }
+          //  }else{
+           //     alert('Username Galat Hai')
+            }//
+       // }
     }
+login()
     
     return (
         <>
