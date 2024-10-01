@@ -12,6 +12,7 @@ export default function Utkarsh() {
     const [showCreate, setShowCreate] = useState(false)
     const [showUpload, setShowUpload] = useState(false)
     const [file, setFile] = useState('Select File')
+    const [fileData, setFileData] = useState()
 
     const login = async () => {
         //if(user.trim()!=='' && pass.trim()!==''){
@@ -42,7 +43,8 @@ export default function Utkarsh() {
     }, [])
 
     const filePicked = (e) => {
-        alert(e.target.files[0].name)
+        setFile(e.target files[0].name)
+        setFileData(e.target.files[0])
     }
 
     const upload = () => {
