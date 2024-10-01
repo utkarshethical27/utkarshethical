@@ -155,4 +155,6 @@
     width: 190px;
     color: black;
     background: transparent;
+    outline: none;
+    border: none;
 }
