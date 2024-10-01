@@ -136,7 +136,7 @@
 }
 
 #upload .fa-xmark{
-    position: absolute;
+    position: fixed;
     right: 5;
     top: 5;
     font-size: 25px;
