@@ -187,6 +187,10 @@
     margin: 0;
 }
 
+#createFileText::placeholder{
+    display: none;
+}
+
 #fileNameInput{
     width: 165px;
     height: 40px;
