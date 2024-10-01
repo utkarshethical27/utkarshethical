@@ -64,7 +64,7 @@ export default function Utkarsh() {
                     <input type="file" name="file" style={{display: 'none'}}/>
                     <label for="file"><i className="fas fa-file"></i></label>
                     <div id="file">{file}</div>
-                    <i className="fas fa-xmark"></i>
+                    <i className="fas fa-xmark" onClick={()=>setShowUpload(false)}></i>
                 </div>
             </>)}
             {showCreate && (<>
