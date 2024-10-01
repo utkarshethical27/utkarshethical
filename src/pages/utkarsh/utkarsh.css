@@ -107,7 +107,7 @@
     margin-left: 5vw;
 }
 
-#uploadBack{
+#uploadBack, #createBack{
     width: 100vw;
     height: 100vh;
     background: black;
@@ -118,7 +118,7 @@
     left: 0;
 }
 
-#upload{
+#upload, #create{
     z-index: 10000;
     background: white;
     top: 50%;
@@ -135,7 +135,7 @@
     align-items: center;
 }
 
-#upload .fa-xmark{
+#upload .fa-xmark, #create .fa-xmark{
     position: fixed;
     right: 10px;
     top: 10px;
@@ -160,7 +160,7 @@
     text-align: center;
 }
 
-#upload button{
+#upload button, #create button{
     background: black;
     color: white;
     height: 50px;
