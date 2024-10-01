@@ -42,7 +42,7 @@ export default function Utkarsh() {
     }, [])
 
     const filePicked = (e) => {
-        alert(Object.keys(e))
+        alert(Object.keys(e.target))
     }
     
     return (
