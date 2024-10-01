@@ -25,7 +25,7 @@ export default function Utkarsh() {
                         const file = document.createElement('div')
                         file.setAttribute('className','file')
                         file.innerHTML = '<a href='+e.secure_url+' className="fileText" target="_blank">'+e.display_name+'.'+e.format+'</a>'
-                        document.getElementById('body').appendChild(file)
+                        document.getElementById('files').appendChild(file)
                     })
               //  }else{
          //           alert('Password Galat Hai')
