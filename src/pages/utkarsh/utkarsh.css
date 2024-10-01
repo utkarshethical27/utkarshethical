@@ -176,12 +176,13 @@
     color: black;
     font-family: poppins;
     font-size: 15px;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
     width: 180px;
     outline: none;
     resize: none;
     height: 80px;
+    padding: 0;
 }
 
 #fileNameInput{
