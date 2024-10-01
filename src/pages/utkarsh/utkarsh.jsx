@@ -1,7 +1,7 @@
 import Nav from '../../components/nav/nav'
 import './utkarsh.css'
 import { Link } from 'react-router-dom';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 export default function Utkarsh() {
