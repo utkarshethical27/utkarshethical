@@ -172,18 +172,18 @@
 }
 
 #createFileText{
-    width: 100px;
-    height: 60px;
+    background-color: transparent;
     color: black;
-    font-size: 15px;
     font-family: poppins;
-    border: 2px solid black;
-    resize: none;
+    font-size: 15px;
+    border: 2px solid white;
     border-radius: 10px;
+    width: 180px;
+    outline: none;
 }
 
 #fileNameInput{
-    width: 190px;
+    width: 180px;
     height: 30px;
     color: black;
     font-size: 15px;
