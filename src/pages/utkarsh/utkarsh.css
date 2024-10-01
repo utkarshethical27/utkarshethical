@@ -134,3 +134,19 @@
     justify-content: space-around;
     align-items: center;
 }
+
+#upload .fa-xmark{
+    position: absolute;
+    right: 5;
+    top: 5;
+    font-size: 25px;
+}
+
+#upload .fa-file{
+    font-size: 30px;
+}
+
+#upload #file{
+    font-size: 20px;
+    font-family: poppins;
+}
