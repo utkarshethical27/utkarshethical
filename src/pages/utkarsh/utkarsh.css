@@ -182,7 +182,8 @@
     outline: none;
     resize: none;
     height: 80px;
-    padding: 0 10px 0 40px;
+    padding: 0 10px;
+    padding-right: 40px;
     margin: 0;
 }
 
