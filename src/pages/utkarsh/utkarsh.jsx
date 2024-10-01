@@ -31,7 +31,15 @@ export default function Utkarsh() {
                         file.innerHTML = '<a href='+e.secure_url+' className="fileText" target="_blank">'+e.display_name+'.'+e.format+'</a>'
                         document.getElementById('files').appendChild(file)
                     })
-        alert(window.getComputedStyle(document.querySelector('#createFileText')))
+        document.addEventListener('DOMContentLoaded', function() {
+    const element = document.querySelector('#createFileText');
+    if (element) {
+        alert(window.getComputedStyle(element));
+    } else {
+        alert('Element not found');
+    }
+});
+
               //  }else{
          //           alert('Password Galat Hai')
         //        }
