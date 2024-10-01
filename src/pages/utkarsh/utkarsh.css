@@ -137,9 +137,12 @@
 
 #upload .fa-xmark{
     position: fixed;
-    right: 5;
-    top: 5;
+    right: 5px;
+    top: 5px;
     font-size: 25px;
+    transform: none;
+    cursor: pointer;
+
 }
 
 #upload .fa-file{
