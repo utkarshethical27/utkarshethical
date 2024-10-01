@@ -79,6 +79,11 @@
     font-family: poppins;
 }
 
+#uploadBut i, #createBut i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
 #files{
     margin-top: 50px;
     display: flex;
