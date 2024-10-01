@@ -157,4 +157,10 @@
     background: transparent;
     outline: none;
     border: none;
+    text-align: center;
+}
+
+#upload button{
+    background: black;
+    color: white;
 }
