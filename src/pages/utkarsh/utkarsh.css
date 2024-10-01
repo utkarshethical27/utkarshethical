@@ -76,7 +76,7 @@
 #files div a{
     color: white;
     text-decoration: none;
-    width: 90vw;
+    width: calc(90vw - 20px);
     padding: 15px 10px;
     border: 3px solid white;
     border-radius: 10px;
