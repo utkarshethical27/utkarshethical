@@ -87,3 +87,19 @@
     display: block;
     margin-left: 5vw;
 }
+
+#uploadBack{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: .5;
+    z-index: 9999;
+}
+
+#upload{
+    z-index: 10000;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
