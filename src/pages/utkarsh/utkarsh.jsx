@@ -42,7 +42,7 @@ export default function Utkarsh() {
     }, [])
 
     const filePicked = (e) => {
-        alert(e.target.files[0])
+        alert(e.target.files[0].name)
     }
 
     const upload = () => {
