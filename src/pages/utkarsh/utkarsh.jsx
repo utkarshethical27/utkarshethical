@@ -43,7 +43,7 @@ export default function Utkarsh() {
     }, [])
 
     const filePicked = (e) => {
-        setFile(e.target files[0].name)
+        setFile(e.target.files[0].name)
         setFileData(e.target.files[0])
     }
 
