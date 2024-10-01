@@ -60,3 +60,11 @@
     background: black;
     opacity: .5;
 }
+
+#action{
+    margin-top: 50px;
+}
+
+#files{
+    color: white;
+}
