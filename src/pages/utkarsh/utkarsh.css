@@ -163,4 +163,6 @@
 #upload button{
     background: black;
     color: white;
+    height: 50px;
+    width: 35vw;
 }
