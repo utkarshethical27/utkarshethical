@@ -73,7 +73,7 @@ export default function Utkarsh() {
                 <div id="upload">
                     <input type="file" id="fileInput" style={{display: 'none'}} onChange={filePicked}/>
                     <label for="fileInput"><i className="fas fa-file"></i></label>
-                    <div id="file">{file}</div>
+                    <input id="file" value={file} disabled/>
                     <i className="fas fa-xmark" onClick={()=>setShowUpload(false)}></i>
                     <button id="uploadBut" onClick={upload} style={{display: file==='Select File'?'none':'flex'}}><i className='fas fa-upload'></i>Upload</button>
                 </div>
