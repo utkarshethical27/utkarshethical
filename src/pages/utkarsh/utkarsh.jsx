@@ -38,7 +38,7 @@ export default function Utkarsh() {
 
     useEffect(()=>{
         login()
-    })
+    }, [])
     
     return (
         <>
