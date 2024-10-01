@@ -65,14 +65,15 @@
     margin-top: 50px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    border: none;
 }
 
 #uploadBut, #createBut{
     background: white;
     color: black;
-    width: 30%;
-    height: 30px;
+    width: 35%;
+    height: 50px;
     border-radius: 10px;
 }
 
