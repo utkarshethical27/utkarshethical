@@ -72,7 +72,7 @@
     row-gap: 20px;
 }
 
-.fileText{
+#files div a{
     color: white;
     text-decoration: none;
     width: 90vw;
