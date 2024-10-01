@@ -170,3 +170,21 @@
     align-items: center;
     text-align: center;
 }
+
+#fileText{
+    width: 190px;
+    height: 60px;
+    color: black;
+    font-size: 20px;
+    font-family: poppins;
+    border: 2px solid black;
+}
+
+#fileName{
+    width: 190px;
+    height: 30px;
+    color: black;
+    font-size: 20px;
+    font-family: poppins;
+    border: 2px solid black;
+}
