@@ -73,6 +73,10 @@
     width: 90vw;
 }
 
+#files div{
+    width: 90vw;
+}
+
 #files div a{
     color: white;
     text-decoration: none;
