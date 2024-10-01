@@ -180,11 +180,13 @@
     border-radius: 10px;
     width: 180px;
     outline: none;
+    resize: none;
+    height: 80px;
 }
 
 #fileNameInput{
     width: 180px;
-    height: 30px;
+    height: 40px;
     color: black;
     font-size: 15px;
     font-family: poppins;
