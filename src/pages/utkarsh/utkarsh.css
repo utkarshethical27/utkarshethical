@@ -71,6 +71,7 @@
     flex-direction: column;
     row-gap: 20px;
     width: 90vw;
+    margin-bottom: 20px;
 }
 
 #files div a{
