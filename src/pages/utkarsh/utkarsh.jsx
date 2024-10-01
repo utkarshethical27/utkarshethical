@@ -11,6 +11,7 @@ export default function Utkarsh() {
     const [showWel, setShowWel] = useState(false)
     const [showCreate, setShowCreate] = useState(false)
     const [showUpload, setShowUpload] = useState(false)
+    const [file, setFile] = useState('Select File')
 
     const login = async () => {
         //if(user.trim()!=='' && pass.trim()!==''){
@@ -52,15 +53,18 @@ export default function Utkarsh() {
             </div>)}
             {logined && (<>
                 <div id="action">
-                    <button id="uploadBut" onClick={()=>setShowUpload(true)}>Upload File</button>
-                    <button id="createBut" onClick={()=>setShowCreate(true)}>Create File</button>
+                    <button id="uploadBut" onClick={()=>setShowUpload(true)}><i className='fas fa-upload'></i>Upload File</button>
+                    <button id="createBut" onClick={()=>setShowCreate(true)}><i className='fas fa-plus'><Create File</button>
                 </div>
                 <div id="files"></div>
             </>)}
             {showUpload && (<>
                 <div id="uploadBack"></div>
                 <div id="upload">
-                    
+                    <input type="file" name="file" style={{display: 'none'}}/>
+                    <label for="file"><i className="fas fa-file"></i></label>
+                    <div id="file">{file}</div>
+                    <i className="fas fa-xmark"></i>
                 </div>
             </>)}
             {showCreate && (<>
