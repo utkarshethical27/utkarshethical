@@ -40,6 +40,10 @@ export default function Utkarsh() {
     useEffect(()=>{
         login()
     }, [])
+
+    const filePicked = (e) => {
+        alert(e)
+    }
     
     return (
         <>
@@ -61,7 +65,7 @@ export default function Utkarsh() {
             {showUpload && (<>
                 <div id="uploadBack"></div>
                 <div id="upload">
-                    <input type="file" id="fileInput" style={{display: 'none'}}/>
+                    <input type="file" id="fileInput" style={{display: 'none'}} onChange={filePicked}/>
                     <label for="fileInput"><i className="fas fa-file"></i></label>
                     <div id="file">{file}</div>
                     <i className="fas fa-xmark" onClick={()=>setShowUpload(false)}></i>
