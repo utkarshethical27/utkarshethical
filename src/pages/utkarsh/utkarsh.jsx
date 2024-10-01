@@ -87,7 +87,7 @@ export default function Utkarsh() {
             {showCreate && (<>
                 <div id="createBack"></div>
                 <div id="create">
-                    <textarea id="fileText" multiline value={fileText} onChange={(e)=>setFileText(e.target.value)} placeholder="Enter file text"></textarea>
+                    <textarea id="createFileText" multiline value={fileText} onChange={(e)=>setFileText(e.target.value)} placeholder="Enter file text"></textarea>
                     <input type="text" id="fileNameInput" value={fileName} onChange={(e)=>setFileName(e.target.value)} placeholder="Enter file name"/>
                     <i className="fas fa-xmark" onClick={()=>{setShowCreate(false); setFileName(''); setFileText()}}></i>
                     <button id="createBut" onClick={create}><i className='fas fa-plus'></i>Create</button>
