@@ -44,6 +44,10 @@ export default function Utkarsh() {
     const filePicked = (e) => {
         alert(Object.keys(e.files))
     }
+
+    const upload = () => {
+        alert(file)
+    }
     
     return (
         <>
@@ -69,6 +73,7 @@ export default function Utkarsh() {
                     <label for="fileInput"><i className="fas fa-file"></i></label>
                     <div id="file">{file}</div>
                     <i className="fas fa-xmark" onClick={()=>setShowUpload(false)}></i>
+                    <button id="uploadBut" onClick={upload} style={{display: file==='Select File'?'none':'flex'}}><i className='fas fa-upload'></i>Upload</button>
                 </div>
             </>)}
             {showCreate && (<>
