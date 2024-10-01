@@ -13,6 +13,8 @@ export default function Utkarsh() {
     const [showUpload, setShowUpload] = useState(false)
     const [file, setFile] = useState('Select File')
     const [fileData, setFileData] = useState()
+    const [fileText, setFileText] = useState('')
+    const [fileName, setFileName] = useState('')
 
     const login = async () => {
         //if(user.trim()!=='' && pass.trim()!==''){
@@ -50,6 +52,10 @@ export default function Utkarsh() {
     const upload = () => {
         alert(file)
     }
+
+    const create = () => {
+        alert(fileName)
+    }
     
     return (
         <>
@@ -74,14 +80,17 @@ export default function Utkarsh() {
                     <input type="file" id="fileInput" style={{display: 'none'}} onChange={filePicked}/>
                     <label for="fileInput"><i className="fas fa-file"></i></label>
                     <input id="file" value={file} disabled/>
-                    <i className="fas fa-xmark" onClick={()=>setShowUpload(false)}></i>
+                    <i className="fas fa-xmark" onClick={()=>{setShowUpload(false); setFile('Select File'); setFileData()}}></i>
                     <button id="uploadBut" onClick={upload} style={{display: file==='Select File'?'none':'flex'}}><i className='fas fa-upload'></i>Upload</button>
                 </div>
             </>)}
             {showCreate && (<>
                 <div id="createBack"></div>
                 <div id="create">
-                    
+                    <textarea id="fileText" multiline value={fileText} onChange={(e)=>setFileText(e)} placeholder="Enter file text"></textarea>
+                    <input type="text" id="fileNameInput" value={fileName} onChange={(e)=>setFileName(e)} placeholder="Enter file name"/>
+                    <i className="fas fa-xmark" onClick={()=>{setShowCreate(false); setFileName(''); setFileText()}}></i>
+                    <button id="createBut" onClick={create}><i className='fas fa-plus'></i>Create</button>
                 </div>
             </>)}
         </>
