@@ -152,4 +152,7 @@
 #upload #file{
     font-size: 20px;
     font-family: poppins;
+    width: 190px;
+    color: black;
+    background: transparent;
 }
