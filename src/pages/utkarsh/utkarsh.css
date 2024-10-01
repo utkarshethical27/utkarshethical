@@ -71,8 +71,6 @@
     flex-direction: column;
     row-gap: 35px;
     width: 90vw;
-    justify-content: center;
-    align-items: center;
 }
 
 #files div a{
@@ -86,4 +84,5 @@
     font-family: poppins;
     text-align: center;
     display: block;
+    margin-left: 5vw;
 }
