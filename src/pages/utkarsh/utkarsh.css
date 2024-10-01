@@ -94,6 +94,7 @@
     background: black;
     opacity: .5;
     z-index: 9999;
+    position: absolute;
 }
 
 #upload{
@@ -102,4 +103,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%);
+    position: absolute;
 }
