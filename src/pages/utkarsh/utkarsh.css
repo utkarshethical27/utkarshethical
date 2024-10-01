@@ -63,6 +63,17 @@
 
 #action{
     margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#uploadBut, #createBut{
+    background: white;
+    color: black;
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
 }
 
 #files{
