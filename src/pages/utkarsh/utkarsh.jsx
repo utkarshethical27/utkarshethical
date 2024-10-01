@@ -61,8 +61,8 @@ export default function Utkarsh() {
             {showUpload && (<>
                 <div id="uploadBack"></div>
                 <div id="upload">
-                    <input type="file" name="file" style={{display: 'none'}}/>
-                    <label for="file"><i className="fas fa-file"></i></label>
+                    <input type="file" id="fileInput" style={{display: 'none'}}/>
+                    <label for="fileInput"><i className="fas fa-file"></i></label>
                     <div id="file">{file}</div>
                     <i className="fas fa-xmark" onClick={()=>setShowUpload(false)}></i>
                 </div>
