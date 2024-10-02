@@ -49,11 +49,11 @@ export default function Utkarsh() {
         setFileData(e.target.files[0])
     }
 
-    const upload = () => {
+    const upload = async () => {
         try{
           const formdata = new FormData()
           formdata.append('file', fileData)
-          const result = axios.post('https://utkarshethicalserver.vercel.app/api/uploadFile/', formdata)
+          const result = await axios.post('https://utkarshethicalserver.vercel.app/api/uploadFile/', formdata)
           if(result.data === 'success')
               alert('File uploaded successfully')
           else
@@ -61,7 +61,7 @@ export default function Utkarsh() {
         }catch(e){alert(e)}
     }
 
-    const create = () => {
+    const create = async () => {
         const result = axios.post('https://utkarshethicalserver.vercel.app/api/createFile/', {
             fileName: fileName,
             fileText: fileText
