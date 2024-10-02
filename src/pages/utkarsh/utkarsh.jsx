@@ -57,7 +57,7 @@ export default function Utkarsh() {
           if(result.data === 'success')
               alert('File uploaded successfully')
           else
-              alert('File uploading failed')
+              alert(result.data)
         }catch(e){alert(e)}
     }
 
