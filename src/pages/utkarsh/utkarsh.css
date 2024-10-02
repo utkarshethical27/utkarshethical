@@ -185,10 +185,7 @@
     padding: 0 10px;
     padding-right: 30px;
     margin: 0;
-}
-
-#createFileText::placeholder{
-    display: none;
+    overflow: hidden;
 }
 
 #fileNameInput{
