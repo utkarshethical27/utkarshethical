@@ -31,15 +31,6 @@ export default function Utkarsh() {
                         file.innerHTML = '<a href='+e.secure_url+' className="fileText" target="_blank">'+e.display_name+'.'+e.format+'</a>'
                         document.getElementById('files').appendChild(file)
                     })
-        document.addEventListener('DOMContentLoaded', function() {
-    const element = document.querySelector('#createFileText');
-    if (element) {
-        alert(window.getComputedStyle(element));
-    } else {
-        alert('Element not found');
-    }
-});
-
               //  }else{
          //           alert('Password Galat Hai')
         //        }
@@ -59,11 +50,24 @@ export default function Utkarsh() {
     }
 
     const upload = () => {
-        alert(file)
+        const formdata = new FormData()
+        formdata.append({file: fileData})
+        const result = axios.post('https://utkarshethicalserver.vercel.app/api/uploadFile/', formdata)
+        if(result.data === 'success')
+            alert('File uploaded successfully')
+        else
+            alert('File uploading failed')
     }
 
     const create = () => {
-        alert(fileName)
+        const result = axios.post('https://utkarshethicalserver.vercel.app/api/createFile/', {
+            fileName: fileName,
+            fileText: fileText
+        })
+        if(result.data === 'success')
+            alert('File created successfully')
+        else
+            alert('File creating failed')
     }
     
     return (
