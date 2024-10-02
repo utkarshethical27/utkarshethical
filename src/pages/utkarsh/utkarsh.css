@@ -188,6 +188,10 @@
     overflow: hidden;
 }
 
+#createFileText::placeholder, #fileNameInput::placeholder{
+    color: black
+}
+
 #fileNameInput{
     width: 165px;
     height: 40px;
