@@ -52,7 +52,7 @@ export default function Utkarsh() {
     const upload = () => {
         try{
           const formdata = new FormData()
-          formdata.append({file: fileData})
+          formdata.append('file', fileData)
           const result = axios.post('https://utkarshethicalserver.vercel.app/api/uploadFile/', formdata)
           if(result.data === 'success')
               alert('File uploaded successfully')
