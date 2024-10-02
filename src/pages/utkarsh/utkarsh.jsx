@@ -56,6 +56,7 @@ export default function Utkarsh() {
           const config = {
             headers: {
                 'Content-Type': 'multipart/form-data',
+                'Access-Control-Allow-Origin': true,
             },
           }
           const result = await axios.post('https://utkarshethicalserver.vercel.app/api/uploadFile/', formdata, config)
