@@ -53,13 +53,13 @@ export default function Utkarsh() {
         try{
           const formdata = new FormData()
           formdata.append('file', fileData)
-          const config = {
-            headers: {
+          const result = await fetch('https://utkarshethicalserver.vercel.app/api/uploadFile/', {
+              method: "POST",
+              body: formdata,
+              headers: {
                 'Content-Type': 'multipart/form-data',
-                'Access-Control-Allow-Origin': true,
-            },
-          }
-          const result = await axios.post('https://utkarshethicalserver.vercel.app/api/uploadFile/', formdata, config)
+              }
+          })
           if(result.data === 'success')
               alert('File uploaded successfully')
           else
