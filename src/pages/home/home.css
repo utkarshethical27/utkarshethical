@@ -66,7 +66,7 @@ h1{
     display: flex;
     column-gap: 50px;
     overflow: hidden;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 #clients img{
@@ -74,4 +74,10 @@ h1{
     height: 120px;
     border-radius: 120px;
     border: 3px solid #7E22D3;
+    animation: scroll 3s linear infinite;
+}
+
+@keyframes scroll{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(-100vw)}
 }
