@@ -15,7 +15,7 @@ export default function Home() {
                 </div>
             </section>
             <section id="customers">
-            
+                <h1 className='title'>My Clients</h1>
             </section>
         </>
     )
