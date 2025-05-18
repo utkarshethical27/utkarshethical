@@ -22,6 +22,11 @@ export default function Home() {
                     <img src="/20210914_115541.png" />
                     <img src="/elite.jpg" />
                     <img src="/connect.png" />
+                    <img src="/clashx.png" />
+                    <img src="/ayudha.jpg" />
+                    <img src="/20210914_115541.png" />
+                    <img src="/elite.jpg" />
+                    <img src="/connect.png" />
                 </div>
             </section>
         </>
