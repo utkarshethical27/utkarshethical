@@ -57,7 +57,7 @@ h1{
 }
 
 #customers{
-    margin-top: 100vh;
+    margin-top: calc(100vh - 50px);
 }
 
 #clients{
@@ -65,10 +65,11 @@ h1{
     display: flex;
     column-gap: 20px;
     overflow: none;
+    margin-top: 50px;
 }
 
 #clients img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
 }
