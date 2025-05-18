@@ -14,6 +14,9 @@ export default function Home() {
                     <Link to="https://wa.me/+919005674186" id="cn">Contact Now</Link>
                 </div>
             </section>
+            <section id="customers">
+            
+            </section>
         </>
     )
 }
