@@ -16,6 +16,11 @@ export default function Home() {
             </section>
             <section id="customers">
                 <h1 className='title'>My Clients</h1>
+                <div id="clients">
+                    <img src="/clashx.png" />
+                    <img src="/ayudha.jpg" />
+                    <img src="/elite.png" />
+                </div>
             </section>
         </>
     )
