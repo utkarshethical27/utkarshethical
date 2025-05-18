@@ -15,20 +15,23 @@ export default function Home() {
                 </div>
             </section>
             <section id="customers">
-                <h1 className='title'>My Clients</h1>
-                <div id="clients">
-                    <img src="/clashx.png" />
-                    <img src="/ayudha.jpg" />
-                    <img src="/20210914_115541.png" />
-                    <img src="/elite.jpg" />
-                    <img src="/connect.png" />
-                    <img src="/clashx.png" />
-                    <img src="/ayudha.jpg" />
-                    <img src="/20210914_115541.png" />
-                    <img src="/elite.jpg" />
-                    <img src="/connect.png" />
-                </div>
-            </section>
+    <h1 className='title'>My Clients</h1>
+    <div id="clients">
+        <div className="clients-track">
+            <img src="/clashx.png" />
+            <img src="/ayudha.jpg" />
+            <img src="/20210914_115541.png" />
+            <img src="/elite.jpg" />
+            <img src="/connect.png" />
+            {/* duplicated for seamless effect */}
+            <img src="/clashx.png" />
+            <img src="/ayudha.jpg" />
+            <img src="/20210914_115541.png" />
+            <img src="/elite.jpg" />
+            <img src="/connect.png" />
+        </div>
+    </div>
+</section>
         </>
     )
 }
