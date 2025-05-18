@@ -64,14 +64,14 @@ h1{
 
 #clients {
   overflow: hidden;
-  width: 100vw;
-  margin-top: 150px;
+  width: 480px;
+  margin-top: 100px;
 }
 
 .clients-track {
   display: flex;
   gap: 50px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
   width: max-content;
 }
 
@@ -89,6 +89,6 @@ h1{
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% + 20px));
   }
 }
