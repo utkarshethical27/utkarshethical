@@ -19,7 +19,9 @@ export default function Home() {
                 <div id="clients">
                     <img src="/clashx.png" />
                     <img src="/ayudha.jpg" />
-                    <img src="/elite.png" />
+                    <img src="/20210914_115541.png" />
+                    <img src="/elite.jpg" />
+                    <img src="/connect.png" />
                 </div>
             </section>
         </>
